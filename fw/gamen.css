@@ -1,0 +1,12 @@
+.frame {
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    height: 99vh;
+  }
+  .frame1 {
+    width: 50%;
+  }
+  .frame2 {
+    width: 50%;
+  }
