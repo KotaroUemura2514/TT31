@@ -2,7 +2,6 @@
 .boss{
     margin: 0 auto;
     margin-top: 100px;
-    border: solid 2px;
     width: 25%;
 }
 
@@ -12,8 +11,21 @@ p{
     margin-bottom: 20px;
 }
 body{
-    background-image: url("pict.jpg");
+    background-image: url("../images/pict.jpg");
     background-size: cover;
+}
+.content {
+    padding: 0.5em 1em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border-radius: 10px;/*角の丸み*/
+    box-sizing: border-box;
+    display: block;
+    max-width: 582px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
 }
 
 
