@@ -56,3 +56,5 @@ class  AccountRegistration(TemplateView):
             print(self.params["account_form"].errors)
 
         return render(request,"login/register.html",context=self.params)
+
+        x
