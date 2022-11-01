@@ -11,10 +11,7 @@
   .frame2 {
     width: 80%;
   }
-<<<<<<< HEAD
 
-=======
->>>>>>> ad6f1c5584fa1ac1fd274b81ccece21b2d6e3164
 h1{
   line-height: 3;
   margin-bottom: 100px;
@@ -78,10 +75,9 @@ h1{
 .scroll{
   height: 600px;
   width: 500px;
-  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
   overflow: auto;
   border: 7px ridge #31A9EE;
-  margin-top: 10px;
-
 }
 
