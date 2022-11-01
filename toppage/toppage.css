@@ -1,0 +1,46 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+ }
+  #scroll{ /*右画面*/
+    box-sizing: border-box;
+    margin-left: 300px;
+    padding: 20px 40px;
+    height: 1000px;
+    background-color: #FFFFFF;
+    
+        height: 600px;
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+        overflow: auto;
+        border: 7px ridge #31A9EE;
+    }
+
+  
+  #content{ /*左画面サイドバー）*/
+    box-sizing: border-box;
+    top: 50px;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    overflow: auto;
+    padding: 20px;
+    background: #00CCFF;
+  }
+  header{
+    background-image: url(/images/baloon.jpeg);
+  }
+  .my{
+    line-height: 3;
+    border-radius: 5px;
+    padding: 11px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  body{
+    background-image: url(/images/broon.jpg);
+  }
+
+  
