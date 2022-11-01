@@ -49,7 +49,9 @@ def Logout(request):
 #ホーム
 @login_required
 def home(request):
-    params = {"UserID":request.user,}
+    params = {
+        "UserID":request.user,
+    }
     return render(request, "pages/home.html",context=params)
 
 
