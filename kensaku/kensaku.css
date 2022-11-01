@@ -73,11 +73,36 @@ h1{
   height: 80px;
   overflow: auto;
 }
-label{
-  display: block;
+.syozaiti{
   font-size: 30px;
-  width: 140px;
-  height: 50px;
-  margin: 10px;
-  padding: 45px 100px;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 170px;
+}
+.pref{
+  padding-top: 0%;
+  font-size: 30px;
+  text-align: center;
+}
+.age{
+  font-size: 30px;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 200px;
+}
+.nenrei{
+  padding-top: 0%;
+  font-size: 30px;
+  text-align: center;
+}
+.syumi{
+  font-size: 30px;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 170px;
+}
+.hobby{
+  padding-top: 0%;
+  font-size: 30px;
+  text-align: center;
 }
