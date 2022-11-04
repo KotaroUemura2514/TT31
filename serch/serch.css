@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ }
+  #scroll{ /*右画面*/
+    box-sizing: border-box;
+    margin-left: 300px;
+    padding: 20px 40px;
+    height: 1000px;
+    background-color: #FFFFFF;
+    }
+
+  
+  #content{ /*左画面サイドバー）*/
+    box-sizing: border-box;
+    top: 50px;
+    height: 100%;
+    width: 339px;
+    position: fixed;
+    overflow: auto;
+    padding: 20px;
+    background: #00CCFF;
+  }
+  header{
+    background-image: url(/images/baloon.jpeg);
+  }
+  .my{
+    line-height: 3;
+    border-radius: 5px;
+    padding: 11px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  body{
+    background-image: url(/images/broon.jpg);
+  }
+   hr{
+    position: relative;
+	height: 3px;
+	border-width: 0;
+	background-color: #d1d4e186;
+  margin-top: 40px;  }
+
+  #kensakuran{  
+  background-color: #d1d4e186;
+}
+#kensakuran li{
+  width: 50%;
+}
+  .syozaiti{
+    padding-top: 0%;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 200px;
+   
+  }
+  .age{
+    padding-top: 0%;
+      font-size: 40px;
+      padding-top: 50px;
+      padding-left: 240px;
+  }
+
+  .syumi{
+    padding: 10px;
+    margin: 10px;
+  }
