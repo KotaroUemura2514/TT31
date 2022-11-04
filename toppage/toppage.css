@@ -2,19 +2,20 @@
     margin: 0px;
     padding: 0px;
  }
+
   #scroll{ /*右画面*/
     box-sizing: border-box;
-    margin-left: 300px;
-    padding: 20px 40px;
-    height: 1000px;
-    background-color: #FFFFFF;
     
-        height: 600px;
-        width: 500px;
-        margin: 0 auto;
-        margin-top: 50px;
-        overflow: auto;
-        border: 7px ridge #31A9EE;
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+    height: 330px;
+    width: 345px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 350px;
+    overflow: auto;
+    border: 7px ridge #31A9EE;
+    
     }
 
   
@@ -41,6 +42,15 @@
   }
   body{
     background-image: url(/images/broon.jpg);
+  } 
+  .name{
+    font-size: 20px;
+    text-align:center;
   }
-
-  
+  .eisuke{
+    text-align: center;
+  }
+  .location{
+  }
+  #nara{
+  }
