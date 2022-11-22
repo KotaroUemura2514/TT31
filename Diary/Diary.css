@@ -39,6 +39,10 @@ li a {
   position: fixed;
 }
 
+.top-line {
+  border-top: 3px solid #000;
+}
+
 .content {
   display: flex;
   flex-direction: column;
