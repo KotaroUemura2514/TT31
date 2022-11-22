@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  /* <li>の・消し */
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* flex-direction: column; */
+}
+
+.sidebar {
+  height: 100%;
+  width: 20%;
+  background-color: #00CCFF;
+  box-sizing: border-box;
+  border: 8px solid rgb(203, 203, 203);
+  position: fixed;
+}
+
+.sidebar li {
+  display: block;
+  line-height: 2;
+  border-bottom: 3px solid #333;
+  padding: 10px;
+  /* 文字の周りをpaddingで10px分開ける */
+  font-size: 20px;
+  text-align: center;
+  /* 文字を中央揃えに */
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+  /* 文字下線消し */
+}
+
+.top-line {
+  border-top: 3px solid #000;
+}
+
+.titlebar {
+  height: 40%;
+  width: 80%;
+  margin-left: 20%;
+  box-sizing: border-box;
+  border: 5px solid green;
+  background-color: #00CCFF;
+}
+
+.field {
+  /* いいね・日記・チャット受信欄 */
+  height: 65%;
+  width: 80%;
+  margin-left: 20%;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+.receiving {
+  /* いいね */
+  display: flex;
+  height: 30%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 3px solid #000000;
+  background-color: #c0f9ff;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+#profile-icon {
+  padding: 25px 30px 12px 30px;
+}
+
+.profile1 {
+  width: 25%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #000;
+  /* 以下は完成時に削除 */
+  border-right: none;
+}
+
+.profile1 h1 {
+  /* 氏名の表示 */
+  height: 45px;
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+.profile1-1 {
+  display: block;
+  position: ;
+  text-align: center;
+
+}
+
+.profile2 {
+  width: 15%;
+  display: block;
+  text-align: right;
+  border: 1px solid #000;
+  /* 以下は完成時に削除 */
+  border-right: none;
+}
+
+.scroll {
+  height: 80px;
+  overflow: auto;
+}
+
+h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+#logo {
+  /*サイトロゴの設定*/
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-bottom: 80px;
+}
+
+#icon {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
