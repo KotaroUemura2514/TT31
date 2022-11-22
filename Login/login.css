@@ -10,10 +10,16 @@ p{
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
+a {
+    text-decoration: none;
+}
+
 body{
     background-image: url("../images/pict.jpg");
     background-size: cover;
 }
+
 .content {
     padding: 0.5em 1em;
     font-weight: bold;
