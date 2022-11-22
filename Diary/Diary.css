@@ -79,59 +79,6 @@ li a {
   border: 8px solid green;
 }
 
-.Searchbar {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  margin: 10px 350px 0px 200px;
-}
-
-.pref-age {
-  text-align: center;
-  margin: 20px 60px;
-  /* 上下px　左右Ppx */
-  line-height: 80px;
-  font-size: 30px;
-}
-
-.hobby {
-  margin-left: auto;
-  margin-right: 0px;
-  font-size: 30px;
-}
-
-.selectbox {
-  height: 30px;
-  width: 100px;
-  vertical-align: 38%;
-  text-align: center;
-}
-
-.selectbox2 {
-  height: 30px;
-  width: 100px;
-  display: block;
-  line-height: 60px;
-  text-align: center;
-}
-
-.content-down {
-  /* Search(検索画面)下側 */
-  height: 60%;
-  width: 80%;
-  flex-grow: 1;
-  margin-left: 20%;
-  box-sizing: border-box;
-  border: 8px solid green;
-}
-
-.result {
-  height: 20%;
-  box-sizing: border-box;
-  border: 5px solid #000000;
-}
 
 .content5 {
   /* いいね・日記・チャット受信欄 */
@@ -141,33 +88,6 @@ li a {
   margin-left: 20%;
   box-sizing: border-box;
   background-color: beige;
-}
-
-.content6 {
-  /* いいね */
-  height: 30%;
-  width: 100%;
-  border: 1px solid #000000;
-  background-color: #c0f9ff;
-}
-
-.content7 {
-  /* いいね */
-  height: 90%;
-  width: 30%;
-  display: inline;
-  line-height: 2.2;
-  margin: 10px 20px 10px 20px;
-  box-sizing: border-box;
-  border: 1px solid #000000;
-  /* 消す */
-}
-
-.content8 {
-  margin: 10px 20px 10px 20px;
-  box-sizing: border-box;
-  border: 1px solid #000000;
-  /* 消す */
 }
 
 .titlebar {
@@ -201,4 +121,14 @@ h2 {
   margin-top: 10px;
   margin-left: 30px;
   margin-right: 40px;
+}
+
+.toukou{
+  position: fixed;
+  top: 650px;
+  right: 160px;
+}
+
+.Search{
+  text-align: right;
 }

@@ -3,7 +3,7 @@
   <head>
     <title>AI</title>
     <meta charset="UTF-8" />
-    <link href="1.css" rel="stylesheet" />
+    <link href="Diary.css" rel="stylesheet" />
   </head>
   <body>
     <div class="app">
@@ -20,7 +20,18 @@
         <div class="content">
           <div class="titlebar">
             <h2>日記</h2>
+            <form action="ページ内検索のURL" method="get" class="Search">
+              <input type="search" name="search" placeholder="キーワードを入力">
+              <input type="submit" name="submit" value="検索">
+              <!--いやページ内検索して並び変えるのどうすんじゃワレ！！！-->
+            </form>
           </div>
+          <div class="toukou">
+            <form action="日記投稿画面のURL" method="post">
+            <input type="button" style="width:90%;padding:8px;font-size:40px; background-color:#00CCFF;" value="+投稿" />
+        </form>
+        </div>
+       
           <div class="content5">
             
           </div>
