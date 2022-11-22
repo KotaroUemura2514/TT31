@@ -3,31 +3,16 @@
   padding: 0;
 }
 
-li {
-  display: block;
-  line-height: 2;
-  border-bottom: 3px solid #333;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
-}
-
-li a {
-  color: white;
-  text-decoration: none;
-}
-
-.app {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  /* flex-direction: column; */
+ul {
+  list-style: none;
+  /* <li>の・消し */
 }
 
 .main {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* flex-direction: column; */
 }
 
 .sidebar {
@@ -39,8 +24,34 @@ li a {
   position: fixed;
 }
 
+.sidebar li {
+  display: block;
+  line-height: 2;
+  border-bottom: 3px solid #333;
+  padding: 10px;
+  /* 文字の周りをpaddingで10px分開ける */
+  font-size: 20px;
+  text-align: center;
+  /* 文字を中央揃えに */
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+  /* 文字下線消し */
+}
+
 .top-line {
   border-top: 3px solid #000;
+}
+
+.titlebar {
+  height: 40%;
+  width: 80%;
+  margin-left: 20%;
+  box-sizing: border-box;
+  border: 5px solid green;
+  background-color: #00CCFF;
 }
 
 .content {
