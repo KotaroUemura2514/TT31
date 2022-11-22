@@ -3,31 +3,11 @@
   padding: 0;
 }
 
-li {
-  display: block;
-  line-height: 2;
-  border-bottom: 3px solid #333;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
-}
-
-li a {
-  color: white;
-  text-decoration: none;
-}
-
-.app {
+.main {
   width: 100vw;
   height: 100vh;
   display: flex;
-  /* flex-direction: column; */
-}
-
-.main {
-  display: flex;
   flex-direction: row;
-  flex-grow: 1;
 }
 
 .sidebar {
@@ -37,6 +17,23 @@ li a {
   box-sizing: border-box;
   border: 8px solid rgb(203, 203, 203);
   position: fixed;
+}
+
+.sidebar li {
+  display: block;
+  line-height: 2;
+  border-bottom: 3px solid #333;
+  padding: 10px;
+  /* 文字の周りをpaddingで10px分開ける */
+  font-size: 20px;
+  text-align: center;
+  /* 文字を中央揃えに */
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+  /* 文字下線消し */
 }
 
 .top-line {
@@ -72,17 +69,6 @@ li a {
   box-sizing: border-box;
   border: 8px solid darkmagenta;
 }
-
-.content-up {
-  /* Search(検索画面)上側 */
-  height: 35%;
-  width: 80%;
-  flex-grow: 1;
-  margin-left: 20%;
-  box-sizing: border-box;
-  border: 8px solid green;
-}
-
 
 .content5 {
   /* いいね・日記・チャット受信欄 */
