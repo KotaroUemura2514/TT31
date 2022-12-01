@@ -71,6 +71,10 @@ ul {
   font-size: 30px;
 }
 
+.space {
+  padding: 0 14px;
+}
+
 .hobby {
   flex-wrap: 1;
   margin-left: auto;
@@ -134,9 +138,9 @@ ul {
 .profile1 {
   width: 25%;
   display: block;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
+    /* div要素の範囲を見やすくする */
+  /* border: 1px solid #000;
+  border-right: none; */
 }
 
 .profile1 h1 {
@@ -161,9 +165,6 @@ ul {
   width: 15%;
   display: block;
   text-align: right;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
 }
 
 .blank {
@@ -175,9 +176,6 @@ ul {
   display: block;
   line-height: 2;
   text-align: center;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
 }
 
 .blank2 {
@@ -189,9 +187,6 @@ ul {
   text-align: right;
   display: block;
   flex-grow: 0;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
 }
 
 #profile-icon2 {

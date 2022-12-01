@@ -89,9 +89,6 @@ ul {
   display: block;
   padding: 0;
   margin: 0;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
 }
 
 .profile1 h1 {
@@ -116,9 +113,6 @@ ul {
   width: 15%;
   display: block;
   text-align: right;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
 }
 
 .blank {
@@ -131,9 +125,6 @@ ul {
   display: block;
   line-height: 2;
   text-align: center;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
 }
 
 .blank2 {
@@ -146,9 +137,6 @@ ul {
   text-align: right;
   display: block;
   flex-grow: 0.5;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
 }
 
 #profile-icon2 {
