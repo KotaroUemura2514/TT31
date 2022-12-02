@@ -66,6 +66,7 @@ ul {
   width: auto;
   margin: 0 20%;
   display: block;
+  font-size: large;
   border:  3px solid #000;
   border-top: none;
   border-bottom: none;
@@ -75,7 +76,7 @@ ul {
 .status {
   width: 100%;
   display: flex;
-  margin: 0 0 20px 15%;
+  margin: 0 0 0 15%;
   line-height: 2.5;
 }
 
@@ -94,13 +95,12 @@ ul {
 }
 
 .edit button {
+  height: 50px;
+  width: 150px;
   text-align: center;
-  padding: 5px 20px;
-  margin: 0 15px;
   /* ボタンの間隔を開ける */
   border: rgb(34 184 255);
   color: #3b8fd8;
-  font-size: 10px;
   font-weight: bold;
   border-radius: 15px;
   cursor: pointer;
