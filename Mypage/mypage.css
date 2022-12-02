@@ -75,22 +75,40 @@ ul {
 .status {
   width: 100%;
   display: flex;
-  margin: 0 30% 5% 28%;
+  margin: 0 0 20px 15%;
   line-height: 2.5;
 }
 
 .lablock {
   flex-grow: 0;
-  text-align: right;
+  text-align: center;
 }
 
 .disname {
-  flex-grow: 0.3;
+  flex-grow: 0.55;
   text-align: center;
 }
 
 .edit {
   text-align: center;
+}
+
+.edit button {
+  text-align: center;
+  padding: 5px 20px;
+  margin: 0 15px;
+  /* ボタンの間隔を開ける */
+  border: rgb(34 184 255);
+  color: #3b8fd8;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.edit button:hover {
+  background-color: rgb(101, 196, 251);
+  color: #FFF;
 }
 
 .scroll {
