@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="ja" dir="ltr">
-<head>
-<meta charset="utf-8">
-<title></title>
-<link rel="stylesheet" href='{% static "App_Folder_css/css/style.css" %}'/>
+{% extends 'navbar.html' %}
+{% block title %} ホーム{% endblock title %}
+{%block content %}
 
-</head>
-<body>
- <h1><font color="red">{{ UserID }}</font>さんようこそ！！</h1>
- <h1><font color="red">{{ UserName }}</font>さんようこそ！！</h1>
+ <section>
+    {% for item in object_list %}
+        <a href="{% url 'detail' item.pk %}">
+            <p>{{ item.id}}</p>
+            <p>{{ item.user}}</p>
+        </a>
+    {% endfor %}
+ </section>
 
- <p> ログアウトは
- <a href="{% url 'Logout' %}">こちら</a>
- </p>
-</body>
-</html>
+{% endblock content %}

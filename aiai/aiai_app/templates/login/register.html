@@ -23,10 +23,11 @@
    {% csrf_token %}
    {{ account_form.as_table }}
    {{ add_account_form.as_table }}
-   </form>
-   </table>
+  </table>
    <div class="btn">
     <input class="btn-new" type="submit" name="" value="新規作成">
+  </form>
+
   </div>
   <a href="{% url 'Login' %}">ログイン画面</a>
    </div>

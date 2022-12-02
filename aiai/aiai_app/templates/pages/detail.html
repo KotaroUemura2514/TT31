@@ -1,0 +1,44 @@
+{% extends 'navbar.html' %}
+{% block title %}ユーザー画面{% endblock title %}
+{%block content %}
+
+ <section>
+   <p>{{ account.id}}</p>
+   <p>{{ account.user}}</p>
+   <p>{{ account.last_name}}</p>
+   <p>{{ account.first_name}}</p>
+   <p>{{ account.age}}</p>
+   <p>{{ account.hobby}}</p>
+   <p>{{ account.area}}</p>
+  <div>
+    <form method="post">
+      {% csrf_token %}
+      <div class="buttons has-addons">
+      {% if profile in user.profile.follows.all %}
+          <button class="button is-success is-static">
+              Followあ
+          </button>
+          <button class="button is-danger"
+                  name="follow"
+                  value="unfollow">
+              Unfollowい
+          </button>
+      {% else %}
+          <button class="button is-success"
+                  name="follow"
+                  value="follow">
+              Followう
+          </button>
+          <button class="button is-danger is-static">
+              Unfollowえ
+          </button>
+      {% endif %}
+      </div>
+  </form>
+  </div>
+    <div> 
+        <button>投稿</button>
+    </div>
+ </section>
+
+{% endblock content %}
