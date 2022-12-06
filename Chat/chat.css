@@ -74,10 +74,13 @@ ul {
 }
 
 .profile {
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
   flex-grow: 1;
+  font-size: large;
 }
 
 #profile-icon {
@@ -85,13 +88,8 @@ ul {
 }
 
 .profile1 {
-  width: 25%;
+  flex-grow: 0.8;
   display: block;
-  padding: 0;
-  margin: 0;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
 }
 
 .profile1 h1 {
@@ -102,19 +100,17 @@ ul {
 }
 
 .profile1-1 {
+  height: 80%;
+  padding: 15px 0 0 0;
   display: block;
-  position: ;
   text-align: center;
-
 }
 
 .profile2 {
-  width: 15%;
+  flex-grow: 0.4;
   display: block;
-  text-align: right;
-  border: 1px solid #000;
-  /* 以下は完成時に削除 */
-  border-right: none;
+  padding: 30px 15px;
+  text-align: center;
 }
 
 .scroll {

@@ -66,6 +66,7 @@ ul {
   width: auto;
   margin: 0 20%;
   display: block;
+  font-size: large;
   border:  3px solid #000;
   border-top: none;
   border-bottom: none;
@@ -75,22 +76,39 @@ ul {
 .status {
   width: 100%;
   display: flex;
-  margin: 0 30% 5% 28%;
+  margin: 0 0 0 15%;
   line-height: 2.5;
 }
 
 .lablock {
   flex-grow: 0;
-  text-align: right;
+  text-align: center;
 }
 
 .disname {
-  flex-grow: 0.3;
+  flex-grow: 0.55;
   text-align: center;
 }
 
 .edit {
   text-align: center;
+}
+
+.edit button {
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  /* ボタンの間隔を開ける */
+  border: rgb(34 184 255);
+  color: #3b8fd8;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.edit button:hover {
+  background-color: rgb(101, 196, 251);
+  color: #FFF;
 }
 
 .scroll {

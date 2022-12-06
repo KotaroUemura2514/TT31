@@ -78,6 +78,7 @@ ul {
   justify-content: flex-start;
   flex-wrap: nowrap;
   flex-grow: 1;
+  font-size: large;
 }
 
 #profile-icon {
