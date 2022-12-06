@@ -57,13 +57,10 @@ ul {
 .Searchbar {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
   margin: 0px 380px 0px 200px;
 }
 
 .pref-age {
-  flex-wrap: 1;
   text-align: center;
   margin: 20px 60px;
   /* 上下px　左右Ppx */
@@ -76,10 +73,27 @@ ul {
 }
 
 .hobby {
-  flex-wrap: 1;
-  margin-left: auto;
-  margin-right: 0px;
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
+.label {
+  padding: 4px 20px;
   font-size: 30px;
+}
+
+.S-3 {
+  top:10px;
+  margin: 0;
+  padding: 0;
+}
+
+.space2 {
+  padding: 10px 0 10px 0;
+}
+
+.space3 {
+  padding: 0 0 10px 0;
 }
 
 .selectbox {
@@ -196,11 +210,6 @@ ul {
 
 .scroll {
   overflow: auto;
-}
-
-.space {
-  /* 空白 */
-  width: 100%;
 }
 
 #logo {
