@@ -57,8 +57,10 @@ ul {
   box-sizing: border-box;
   border: 8px solid green;
   background-image: url("../images/fukazawa02.jpg");
-  background-size: cover;       /* 背景画像の大きさ・縦横比の設定 */
-  background-repeat: no-repeat; /* 背景画像の繰り返しを防ぐ */
+  background-size: cover;
+  /* 背景画像の大きさ・縦横比の設定 */
+  background-repeat: no-repeat;
+  /* 背景画像の繰り返しを防ぐ */
 }
 
 .profile {
@@ -67,27 +69,42 @@ ul {
   margin: 0 20%;
   display: block;
   font-size: large;
-  border:  3px solid #000;
+  border: 3px solid #000;
   border-top: none;
   border-bottom: none;
   background-color: #FFF;
 }
 
 .status {
+  height: auto;
   width: 100%;
   display: flex;
-  margin: 0 30% 5% 28%;
   line-height: 2.5;
 }
 
+.button-space {
+  height: 100%;
+  width: 25%;
+}
+
+.center {
+  display: flex;
+  flex-grow: 1;
+}
+
 .lablock {
-  flex-grow: 0;
-  text-align: right;
+  flex-grow: 0.3;
+  text-align: center;
 }
 
 .disname {
-  flex-grow: 0.3;
-  text-align: center;
+  flex-grow: 1;
+}
+
+.button-space2 {
+  height: 100%;
+  width: 25%;
+  color: rgb(255, 0, 0);
 }
 
 .edit {
@@ -99,13 +116,15 @@ ul {
   overflow: auto;
 }
 
-h2 {
+.icon,h2 {
+  margin: 0;
   padding-top: 20px;
   text-align: center;
   font-size: 50px;
 }
 
 h3 {
+  /* 名前を中央に */
   text-align: center;
 }
 
