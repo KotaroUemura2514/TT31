@@ -95,3 +95,14 @@ li, input[type='checkbox'] {
 .dropbox-location__padding{
     padding-right: 33px;
 }
+
+.upload {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#preview {
+    height: auto;
+    width: 50%;
+    margin: 10px;
+}

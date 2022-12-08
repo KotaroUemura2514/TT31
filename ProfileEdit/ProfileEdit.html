@@ -12,7 +12,7 @@
 <body>
     <section class="account">
         <div class="content">
-            <h1 class="title">アカウント作成</h1>
+            <h1 class="title">プロフィール編集</h1>
             <div class="element">
                 <div>
                     <p class="p-tag__padding"><label for="name">ユーザー名</label>
@@ -122,6 +122,22 @@
                 </div>
                 <div class="upload">
                     ここに写真アップロード
+                    <form action="ProfileEdit.html" method="post" enctype="multipart/form-data" >
+                        <input type="file" name="test" onchange="previewFile(this);">
+                      </form>
+                      <p>プレビュー</p>
+                      <img id="preview">
+                      <script>
+                      function previewFile(hoge){
+                        var fileData = new FileReader();
+                        fileData.onload = (function() {
+                          //id属性が付与されているimgタグのsrc属性に、fileReaderで取得した値の結果を入力することで
+                          //プレビュー表示している
+                          document.getElementById('preview').src = fileData.result;
+                        });
+                        fileData.readAsDataURL(hoge.files[0]);
+                      }
+                      </script>
                 </div>
             </div>
             <div class="btn">
