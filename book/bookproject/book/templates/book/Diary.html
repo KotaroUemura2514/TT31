@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AI</title>
+  <meta charset="UTF-8" />
+  {% load static %}
+  <link href="{% static 'css/Diary.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="sidebar">
+      <!--左側-->
+      <h1 id="logo"><a href="../index/index.html">
+          <img src="../images/aiabana-.jpg" width="250" height="150" alt="トップ"></a></h1>
+      <li class="top-line"><a href="../Mypage/Mypage.html">マイページへ</a></li>
+      <li><a href="../Search/Search.html">検索</a></li>
+      <li><a href="../Good/Good.html">いいね</a></li>
+      <li><a href="../Diary/Diary.html" class="current">日記</a></li>
+      <li><a href="../Chat/Chat.html">チャット</a></li>
+    </div>
+    <div class="content-up">
+    <!--右上-->
+      <div class="diary-bar">
+        <div class="pref-agee">
+        <h2>日記</h2>
+        <form action="ページ内検索のURL" method="get" class="Search">
+          <input type="search" name="search" placeholder="キーワードを入力">
+          <a href="{% url 'sorting' %}" class="btn btn-primary">並び替え</a>
+          <!--いやページ内検索して並び変えるのどうすんじゃワレ！！！-->
+        </form>
+      </div>
+    </div>
+      </div>
+      <div class="content-down">
+        <!--右下-->
+        <div class="result">
+          <div class="profile">
+            <!-- <h2 id="profile-icon">
+              <img src="../images/fukazawa02.jpg" width="150" height="150">
+            </h2> -->
+            {% for item in object_list %}
+            {% block content %}
+            <div class="profile1">
+              <h1>{{item.title}}</h1>
+              <div class="profile1-1">
+                <a class="card-text">{{item.text}}</a>
+                <div class="blank"></div>
+                <div class="wrap">
+                  <div class="box1">高評価</div>
+                  <div class="box2">低評価</div>
+                </div>
+              </div>
+            </div>
+            <div class="profile2">
+              <div class="diary-time">
+                <h3>〇分前に投稿</h3>
+                <h2 id="profile-icon2">
+                  <img src="../images/fukazawa02.jpg" width="50" height="50">
+                </h2>
+                <div class="diaryedit">
+                  <button href="{% url 'delete' item.pk %}" class="delete">削除</button>
+                  <button href="{% url 'update' item.pk %}" class="update">編集</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+      {% endblock %}
+      {% endfor %}
+        <div class="toukou">
+          <form action="日記投稿画面のURL" method="post">
+            <a href="{% url 'create' %}" class="toukouBtn">投稿</a>
+          </form>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

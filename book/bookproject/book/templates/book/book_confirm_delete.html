@@ -1,0 +1,13 @@
+
+
+{% block title %}削除しますか？{% endblock %}
+
+{%block content %}
+ <form method="post">
+    {% csrf_token %}
+    <button type="submit">{{ object.title }}を削除する</button>
+ </form>
+ {% endblock %}
+
+
+ 
