@@ -7,5 +7,4 @@ urlpatterns=[
     path('book/toukou/',views.Toukou.as_view(), name='create'),
     path('book/<int:pk>/delete/', views.Delete.as_view(), name='delete'),
     path('book/<int:pk>/update/', views.Update.as_view(), name='update'),
-    path('', views.index_view, name='sorting'),
 ]

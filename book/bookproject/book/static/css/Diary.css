@@ -142,3 +142,12 @@ h2 {
 .card-header{
   font-size: 30px;
 }
+
+.toukougamen{
+  margin-left: 306px;
+}
+
+.henkoubutton{
+  display: flex;
+  justify-content: flex-end;
+}
