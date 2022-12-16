@@ -31,9 +31,13 @@
           <body>
             {% for item in object_list %}
             <div class="card" style="margin: left 100px;" >
-              <h5 class="card-header">{{item.title}}</h5>
+              <h5>{{user.username}}</h5>
+              <h6 class="card-header">{{item.title}}</h6>
               <div class="card-body">
               <p class="card-text">{{item.text}}</p>
+              <style type="text/css">
+              
+              </style>
                 <div class="henkoubutton">
                  <a href="{% url 'delete' item.pk %}" class="delete">削除</a>
                  <a href="{% url 'update' item.pk %}" class="update">　編集</a>
