@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>AI</title>
-    <meta charset="UTF-8" />
-    {% load static %}
+
+<head>
+  <title>AI</title>
+  <meta charset="UTF-8" />
+  {% load static %}
   <link href="{% static 'css/Diary.css' %}" rel="stylesheet" />
 
-  </head>
-  <body>
-    <div class="app">
-      <div class="main">
-        <div class="sidebar">
-            <h1 id="logo"><a href="index.html">
-                <img src="../images/aiabana-.jpg" width="250" height="150" alt="トップ"></a></h1>
-            <li><a href="../Mypage/Mypage.html">マイページへ</a></li>
-            <li><a href="../Search/Search.html">検索</a></li>
-            <li><a href="../Good/Good.html">いいね</a></li>
-            <li><a href="../Diary/Diary.html" class="current">日記</a></li>
-            <li><a href="../Chat/Chat.html">チャット</a></li>
+</head>
+
+<body>
+  <div class="app">
+    <div class="main">
+      <div class="sidebar">
+        <h1 id="logo">
+          <img src="../images/aiabana-.jpg" width="250" height="150" alt="トップ">
+          </a>
+        </h1>
+        <section>
+          <li class="top-line"><a href="../index/index.html">ホーム</a></li>
+          <li><a href="../Mypage/Mypage.html">マイページへ</a></li>
+          <li><a href="../Good/Good.html">いいね</a></li>
+          <li><a href="../Diary/Diary.html" class="current">日記</a></li>
+          <li><a href="../Chat/Chat.html">チャット</a></li>
+        </section>
+      </div>
+      <div class="content">
+        <div class="titlebar">
+          <h2>日記</h2>
+          <form action="ページ内検索のURL" method="get" class="Search">
+            <input type="search" name="search" placeholder="キーワードを入力">
+            <input type="submit" class="button-space" name="submit" value="検索">
+          </form>
         </div>
-        <div class="content">
-          <div class="titlebar">
-            <h2>日記</h2>
-            <form action="ページ内検索のURL" method="get" class="Search">
-              <input type="search" name="search" placeholder="キーワードを入力">
-              <input type="submit" name="submit" value="検索">
-              <!--いやページ内検索して並び変えるのどうすんじゃワレ！！！-->
-            </form>
-          </div>
-          <body>
-            {% for item in object_list %}
-            <div class="card" style="margin: left 100px;" >
-              <h5>{{user.username}}</h5>
-              <h6 class="card-header">{{item.title}}</h6>
-              <div class="card-body">
-              <p class="card-text">{{item.text}}</p>
-              <style type="text/css">
-              
-              </style>
-                <div class="henkoubutton">
-                 <a href="{% url 'delete' item.pk %}" class="delete">削除</a>
-                 <a href="{% url 'update' item.pk %}" class="update">　編集</a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-              </div>
+        {% for item in object_list %}
+        <div class="card">
+          <h5>{{user.username}}</h5>
+          <h6>{{item.title}}</h6>
+          <div>
+            <p>{{item.text}}</p>
+            <div class="editbutton">
+              <a href="{% url 'delete' item.pk %}" class="delete">削除</a>
+              <a href="{% url 'update' item.pk %}" class="update">編集</a>
             </div>
-            {% endfor %}
-          </body>
-          <div class="toukou">
-            <form action="日記投稿画面のURL" method="post">
-            <a href="{% url 'create' %}" class="createBtn">投稿</a>
-        </form>
-        </div>
-       
-          <div class="content5">
-            
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
           </div>
+        </div>
+        {% endfor %}
+        <div class="toukou">
+          <form action="日記投稿画面のURL" method="post">
+            <a href="{% url 'create' %}" class="createBtn">投稿</a>
+          </form>
+        </div>
+
+        <div class="content5">
+
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
