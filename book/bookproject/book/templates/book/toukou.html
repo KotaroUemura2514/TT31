@@ -1,48 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>投稿画面</title>
-    <meta charset="UTF-8" />
-    {% load static %}
+
+<head>
+  <title>投稿画面</title>
+  <meta charset="UTF-8" />
+  {% load static %}
   <link href="{% static 'css/Diary.css' %}" rel="stylesheet" />
 
-  </head>
-  <body>
-    <div class="app">
-      <div class="main">
-        <div class="sidebar">
-            <h1 id="logo"><a href="index.html">
-                <img src="../images/aiabana-.jpg" width="250" height="150" alt="トップ"></a></h1>
-            <li><a href="../Mypage/Mypage.html">マイページへ</a></li>
-            <li><a href="../Search/Search.html">検索</a></li>
-            <li><a href="../Good/Good.html">いいね</a></li>
-            <li><a href="../Diary/Diary.html" class="current">日記</a></li>
-            <li><a href="../Chat/Chat.html">チャット</a></li>
-        </div>
-        <div class="content">
-          <div class="titlebar">
-            <h2>日記</h2>
-            <form action="ページ内検索のURL" method="get" class="Search">
-              <!-- <input type="search" name="search" placeholder="キーワードを入力">
-              <input type="submit" name="submit" value="検索"> -->
-              <!--いやページ内検索して並び変えるのどうすんじゃワレ！！！-->
-            </form>
-          </div>
-          <body>
-            <div>
-              {% block content %}
-              <form method="post" class="toukougamen">{% csrf_token %}
-                {{form.as_p}}
-                    <button class="btn btn-success mt-4" type="submit">投稿する</button>
-                    <a href="http://127.0.0.1:8000/book/"><input type="button" value="戻る" name="modottenaiyoruwosiranai"></a>
+</head>
 
-            </form>
-            {% endblock content %}
-                </div>
-          </body>
-        </form>
-        </div>
-      </div>
-    </div>
-  </body>
+<body>
+  <div>
+    {% block content %}
+    <form method="post" class="toukougamen">{% csrf_token %}
+      {{form.as_p}}
+      <button class="btn btn-success mt-4" type="submit">投稿する</button>
+      <a href="http://127.0.0.1:8000/book/"><input type="button" value="戻る" name="modottenaiyoruwosiranai"></a>
+
+    </form>
+    {% endblock content %}
+  </div>
+  </form>
+</body>
+
 </html>
