@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+  /* <li>の・消し */
+}
+
 li {
   display: block;
   line-height: 2;
