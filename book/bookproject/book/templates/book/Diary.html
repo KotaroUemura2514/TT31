@@ -33,15 +33,21 @@
         </div>
         {% for item in object_list %}
         <div class="card">
-          <h5>{{user.username}}</h5>
-          <h6>{{item.title}}</h6>
-          <div>
-            <p>{{item.text}}</p>
-            <div class="editbutton">
-              <a href="{% url 'delete' item.pk %}" class="delete">削除</a>
-              <a href="{% url 'update' item.pk %}" class="update">編集</a>
+          <div class="text1">
+            <h5>{{item.title}}</h5><!--タイトル-->
+            <p>{{item.text}}</p><!--コメント-->
+            <h6>{{user.username}}</h6><!--ユーザー名-->
+          </div>
+          <div class="text2">
+            <p>〇分前に投稿</p>
+            <div class="button">
+              <button type="submit">♥</button>
+              <div>
+                <a href="{% url 'delete' item.pk %}" class="delete">削除</a>
+                <a href="{% url 'update' item.pk %}" class="update">編集</a>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
             </div>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
           </div>
         </div>
         {% endfor %}
@@ -49,10 +55,6 @@
           <form action="日記投稿画面のURL" method="post">
             <a href="{% url 'create' %}" class="createBtn">投稿</a>
           </form>
-        </div>
-
-        <div class="content5">
-
         </div>
       </div>
     </div>
