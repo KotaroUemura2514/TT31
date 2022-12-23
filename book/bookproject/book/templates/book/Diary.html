@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html>
+{% extends 'book/base.html' %}
+
+{% block title %}
+{% endblock title %}
+{% comment %} <html>
 
 <head>
   <title>AI</title>
@@ -8,7 +11,8 @@
   <link href="{% static 'css/Diary.css' %}" rel="stylesheet" />
 </head>
 
-<body>
+<body> {% endcomment %}
+  {% block content %}
   <div class="app">
     <div class="main">
       <div class="sidebar">
@@ -31,12 +35,22 @@
             <input type="submit" class="button-space" name="submit" value="検索">
           </form>
         </div>
-        {% for item in object_list %}
+        {% for obj in qs  %}
         <div class="card">
           <div class="text1">
-            <h5>{{item.title}}</h5><!--タイトル-->
-            <p>{{item.text}}</p><!--コメント-->
-            <h6>{{user.username}}</h6><!--ユーザー名-->
+            <h5>{{obj.title}}</h5><!--タイトル-->
+            <p>{{obj.text}}</p><!--コメント-->
+            <h6>投稿者: {{obj.author}}</h6><!--ユーザー名-->
+            <form action="{% url 'posts:like-post' %}" method='POST' class="ui form">
+              {% csrf_token %}
+              <input type='hidden' name='post_id' value="{{ obj.id }}">
+              {% if user not in obj.liked.all %}
+                  <button class="ui button positive" type='submit'>Like</button>
+              {% else %}
+                  <button class="ui button negative" type='submit'>Unlike</button>
+              {% endif %}
+              <strong>{{ obj.liked.all.count }} likes</strong>
+           </form>
           </div>
           <div class="text2">
             <p>〇分前に投稿</p>
@@ -51,6 +65,7 @@
           </div>
         </div>
         {% endfor %}
+        {% endblock content %}
         <div class="toukou">
           <form action="日記投稿画面のURL" method="post">
             <a href="{% url 'create' %}" class="createBtn">投稿</a>
@@ -59,6 +74,7 @@
       </div>
     </div>
   </div>
-</body>
+  
+{% comment %} </body>
 
-</html>
+</html> {% endcomment %}
