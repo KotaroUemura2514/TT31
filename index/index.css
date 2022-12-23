@@ -50,8 +50,37 @@ ul {
   width: 100%;
 }
 
+.titlebar {
+  height: 20%;
+  width: 80%;
+  margin-left: 20%;
+  box-sizing: border-box;
+  background-color: #00CCFF;
+}
+
+.search {
+  display: block;
+  padding: 50px 0;
+  margin: 0 20%;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.input-size {
+  padding: 5px 65px 5px 0;
+  text-align: left;
+  border: none;
+  border-radius: 10px;
+}
+
+.button-size {
+  padding: 3px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
 .field {
-  height: 100%;
+  height: auto;
   width: 80%;
   margin-left: 20%;
   box-sizing: border-box;
@@ -63,52 +92,51 @@ ul {
   /* 背景画像の繰り返しを防ぐ */
 }
 
-.profile {
+.User-list-all {
   height: 100%;
   width: auto;
-  margin: 0 20%;
   display: block;
-  font-size: large;
-  border: 3px solid #000;
-  border-top: none;
-  border-bottom: none;
-  background-color: #FFF;
+  margin: 0 20%;
+  background-color: #fff;
 }
 
-.status {
+.User-list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 15px 20px;
+}
+
+.ad {
+  /* 枠からdiv要素を離す */
+  width: 100%;
+  display: flex;
+}
+
+.bd {
+  /* 間隔を空ける設定のみ*/
+  display: block;
+  width: 70%;
+  margin-left: 25px;
+}
+
+.cd {
   height: auto;
   width: 100%;
   display: flex;
-  line-height: 2.5;
 }
 
-.button-space {
-  height: 100%;
-  width: 25%;
+.status {
+  display: block;
+  flex-wrap: nowrap;
 }
 
-.center {
-  display: flex;
-  flex-grow: 1;
-}
-
-.lablock {
-  flex-grow: 0.3;
-  text-align: center;
-}
-
-.disname {
-  flex-grow: 1;
-}
-
-.button-space2 {
-  height: 100%;
-  width: 25%;
+.follow {
+  margin-left: auto;
+  margin-right: 0;
   color: rgb(255, 0, 0);
-}
-
-.edit {
-  text-align: center;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
 }
 
 .scroll {
@@ -116,16 +144,11 @@ ul {
   overflow: auto;
 }
 
-.icon,h2 {
-  margin: 0;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 50px;
-}
-
-h3 {
-  /* 名前を中央に */
-  text-align: center;
+h2 {
+  line-height: 2;
+  text-align: justify;
+  font-weight: bold;
+  font-size: large;
 }
 
 #logo {
