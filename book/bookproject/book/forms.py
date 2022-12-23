@@ -7,7 +7,7 @@ class BookForm(forms.ModelsForm):
         fields=('title','text')
 
         widget={
-            'title':forms.TextInput(attrs={'class':'bookTitle'}),
-            'text':forms.TextInput(attrs={'class':'bookText'}),
+            'title':forms.TextInput(attrs={'class':'bookTitle'}),#タイトル
+            'text':forms.TextInput(attrs={'class':'bookText'}),#コメント
     
         }
