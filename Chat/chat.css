@@ -49,8 +49,9 @@ ul {
   height: 40%;
   width: 80%;
   margin-left: 20%;
+  padding: 20px 0;
   box-sizing: border-box;
-  border: 5px solid green;
+  /* border: 5px solid green; */
   background-color: #00CCFF;
 }
 
@@ -69,7 +70,7 @@ ul {
   height: 30%;
   width: 100%;
   box-sizing: border-box;
-  border: 3px solid #000000;
+  border-bottom: 3px solid #000000;
   background-color: #c0f9ff;
 }
 
@@ -119,7 +120,6 @@ ul {
 }
 
 h3 {
-  margin: 20px 0;
   text-align: center;
   font-size: 50px;
 }
